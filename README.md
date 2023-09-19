@@ -104,4 +104,13 @@ docker system df
 ```
 </details>
 
+## 8. ¿Cuanta RAM ocupan los contenedores? ¿Hay algún comando docker para saber esto?.
+<details>
+<summary>Explicación del octavo paso.</summary>
 
+Utilizando `docker stats` comprobamos que **dam_ubu1** utiliza **64.58MiB** y **dam_ubu2** utiliza **45,74MiB**.
+
+```bash
+docker stats
+```
+</details>
