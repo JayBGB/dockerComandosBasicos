@@ -64,7 +64,28 @@ ping google.com
 ```  
 </details>
 
-## 5. Crea un contenedor con el nombre 'dam_ubu2'. ¿Puedes hacer ping entre los contenedores?
+## 5. Crear un contenedor con el nombre 'dam_ubu2' y hacer ping entre ambos contenedores.
+<details>
+<summary>Explicación del quinto paso.</summary>
+
+Creamos otra máquina siguiendo los pasos mencionados anteriormente, hacemos las instalaciones necesarias y utilizamos `ping 172.17.0.3`, que debería darnos un tiempo de respuesta increíblemente bajo.
+
+```bash
+docker run -dit --name dam_ubu2 ubuntu:latest bash
+
+apt update
+
+apt install net-tools
+
+apt install iputils-ping
+
+ifconfig
+
+ping 172.17.0.3
+```
+</details>
+
+
 ## 6. Sal del terminal, ¿que ocurrió con el contenedor?
 ## 7. ¿Cuanta memoria en el disco duro ocupaste?
 ## 8. ¿Cuanta RAM ocupan los contenedores? ¿Hay algún comando docker para saber esto?.
