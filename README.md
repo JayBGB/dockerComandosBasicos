@@ -94,4 +94,14 @@ Habiendo creado ambos con `-dit`, los contenedores se mantienen intactos.
 </details>
 
 ## 7. ¿Cuanta memoria en el disco duro ocupaste?
-## 8. ¿Cuanta RAM ocupan los contenedores? ¿Hay algún comando docker para saber esto?.
+<details>
+<summary>Explicación del séptimo paso.</summary>
+
+Utilizando el comando `docker system df` comprobamos que, en total, los contenedores usan 226.2MB en el disco.
+
+```bash
+docker system df
+```
+</details>
+
+
