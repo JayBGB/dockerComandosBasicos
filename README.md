@@ -87,5 +87,11 @@ ping 172.17.0.3
 
 
 ## 6. Sal del terminal, ¿que ocurrió con el contenedor?
+<details>
+<summary>Explicación del sexto paso.</summary>
+
+Habiendo creado ambos con `-dit`, los contenedores se mantienen intactos.
+</details>
+
 ## 7. ¿Cuanta memoria en el disco duro ocupaste?
 ## 8. ¿Cuanta RAM ocupan los contenedores? ¿Hay algún comando docker para saber esto?.
