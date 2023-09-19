@@ -2,7 +2,7 @@
 
 ## 1. Descargar la imagen Ubuntu y comprobar que está en el equipo.
 
-Usamos el comando "`docker pull ubuntu`" para descargar la imagen de Ubuntu a nuestro ordenador. A continuación, utilizamos "`docker images`" para comprobar que lo hemos hecho correctamente y que, en efecto, la imagen se ha descargado con éxito.
+Usamos el comando `docker pull ubuntu` para descargar la imagen de Ubuntu a nuestro ordenador. A continuación, utilizamos `docker images` para comprobar que lo hemos hecho correctamente y que, en efecto, la imagen se ha descargado con éxito.
 
 ```
 docker pull ubuntu
@@ -10,6 +10,13 @@ docker images
 ```
 
 ## 2. Crear un contenedor sin ponerle nombre y comprobar si está arrancado. Después, obtener el nombre.
+
+Utilizo el comando `docker run -dit ubuntu:latest bash` para crear un contenedor con un nombre aleatorio, y posteriormente uso `docker ps` para ver el nombre, que es ***sweet_poitras***.
+
+```
+docker run -dit ubuntu:latest bash
+docker ps
+```
 
 
 
